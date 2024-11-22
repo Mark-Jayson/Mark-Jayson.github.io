@@ -21,6 +21,7 @@
         }
         body {
             background-color: rgb(0, 0, 0);
+            
         }
         .sub {
             font-family: Poppins;
@@ -31,12 +32,10 @@
 
         .col-lg-3, .col-md-12, .col-sm-12{
             margin: 40px;
-            
-            
         }
         .flip-card {
             background-color: white;
-            width: 300px;
+            width: 400px;
             height: 300px;
             perspective: 1000px;
             margin-bottom: 30px;
@@ -91,12 +90,31 @@
             align-items: center;
             padding: 20px;
         }
+        @media (min-width: 800px) and (max-width: 1200px) {
+            .lum {
+                width: 700px;
+                margin-left: -50px;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            
+        .flip-card {
+            background-color: white;
+            width: 600px;
+            height: 300px;
+            perspective: 1000px;
+            margin-bottom: 30px;
+            border-radius: 25px;
+        }
+        }
+        
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Discover Switzerland</a>
+        <div class="container ">
+            <a class="navbar-brand fs-3" href="#">Discover Switzerland</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -133,10 +151,15 @@
     </section>
 
     <section id="attractions" class="py-5 bg-black">
-        <div class="container">
-            <h2 class="text-center mb-4 text-white">Top Attractions</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-12 col-sm-12">
+        <div class="container-fluid bg-danger ">
+            <h2 class="text-center py-3 display-6">Top Attractions</h2>
+            <div class="fs-4 d-flex justify-content-center">
+                klwejrkje lrkjelrkjerlje l rjlekrjerekrjel kjklejr klrj kljrjel jrlejk lkere 
+            </div>
+            <div class="row m-4 mt-2">
+
+
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image: url('https://www.thoughtco.com/thmb/EKnmgoAr_X4TrIpxBiPYu9lao9U=/2000x1333/filters:fill(auto,1)/GettyImages-468963673-5ad40ad2fa6bcc0036add08a.jpg');">
@@ -149,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12" >
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum" >
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image: url('https://cdn.audleytravel.com/4990/3566/79/15985940-lake-geneva-region.jpg');">
@@ -162,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum">
                     <div class="flip-card ">
                         <div class="flip-card-inner">
                             <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/originals/64/c5/54/64c5549b584b16f98cea8b76a5538c19.jpg');">
