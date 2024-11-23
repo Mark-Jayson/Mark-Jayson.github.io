@@ -33,7 +33,7 @@
             max-width: 25px;
             height: auto;
             margin: 0 0 2% 3%;
-            ma
+        
            
 
         }
@@ -106,7 +106,7 @@
                 justify-content: center;
                 margin: auto;
             }
-            
+        
         .flip-card {
             background-color: white;
             width: 600px;
@@ -115,6 +115,15 @@
             margin-bottom: 30px;
             border-radius: 25px;
         }
+        }
+        @media (max-width: 800px){
+            .flip-card{
+                margin-left: -60px
+            }
+            .about{
+                display: flex;
+                justify-content: center;
+            }
         }
         
     </style>
@@ -139,7 +148,7 @@
     <header id="home" class="hero">
         <div class="container">
             <h1 class="display-1">Welcome to Switzerland</h1>
-            <p class=" fs-6 mt-5 sub">Switzerland, officially the Swiss Confederation, is a landlocked country located in west-central Europe. It is bordered by Italy to the south, France to the west, Germany to the north, and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the country's population of 9 million are concentrated on the plateau, which hosts its largest cities and economic centres, including Zurich, Geneva, and Base</div>
+            <p class=" fs-6 mt-5 p-4 sub">Switzerland, officially the Swiss Confederation, is a landlocked country located in west-central Europe. It is bordered by Italy to the south, France to the west, Germany to the north, and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the country's population of 9 million are concentrated on the plateau, which hosts its largest cities and economic centres, including Zurich, Geneva, and Base</div>
             </p>
         </div>
     </header>
@@ -148,8 +157,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 my-20" style="margin-top: 30px; color: white;">
-                    <h2 class="text-left mb-9" >About Switzerland</h2>
-                    <p class = "fs-6 mt-3">Switzerland, a land of breathtaking landscapes and rich cultural heritage, offers an unforgettable experience for every traveler. From the majestic Alps to pristine lakes, charming villages to cosmopolitan cities, Switzerland is a paradise waiting to be explored.</p>
+                    <h2 class="text-left mb-9 about" >About Switzerland</h2>
+                    <p class = "fs-6 mt-3 p-4">Switzerland, a land of breathtaking landscapes and rich cultural heritage, offers an unforgettable experience for every traveler. From the majestic Alps to pristine lakes, charming villages to cosmopolitan cities, Switzerland is a paradise waiting to be explored.</p>
                 </div>
                 <div class="col-md-5 my-0 " style = "overflow-y: hidden; max-height: 400px; ">
                     <img src="https://as1.ftcdn.net/v2/jpg/02/59/60/48/1000_F_259604837_CcQal6FTkNyG4oIiWFUN8h9Akil2O2MR.jpg" alt="Swiss Landscape" class="img-fluid rounded">
