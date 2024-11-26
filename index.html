@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        
         .navbar-brand {
             font-size: 1.8rem;
             display: flex;
             justify-content: center;
         }
-        .navbar{
+
+        .navbar {
             background-color: rgb(0, 0, 0);
         }
+
         .navbar-toggler-icon {
             background-color: #007bff;
             border-color: #ddd;
@@ -29,12 +30,16 @@
             background-color: #635a5a;
             border-color: #007bff;
         }
-        .card {
-            margin-bottom: 20px;
-        }
-        #about{
+
+
+        #about {
             background-color: #E9EDEE;
         }
+        #projects{
+            background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), rgba(0, 0, 0, 0.901));
+            background-color:#f4f4f4;
+        }
+        
 
         .card img {
             width: 100%;
@@ -42,102 +47,148 @@
             object-fit: cover;
         }
 
-        .icon{
+        .icon {
             max-width: 55px;
             height: auto;
             margin: 0 0 0 30px;
-  
+
         }
 
-        .techstack{
+        .techstack {
             max-width: 55px;
             height: auto;
             margin: 20px;
-  
+
         }
 
 
         .nav-link {
-            
+
             margin-right: 3vw;
             color: rgb(25, 128, 244);
         }
-        .creation, .intro{
+
+        .creation,
+        .intro {
             font-family: Montserrat, sans-serif;
-            
+
         }
-        .creation{
-        font-weight: 900;
+
+        .creation {
+            font-weight: 900;
             color: darkgray;
         }
-        .intro{
+        
+
+        .intro {
             font-size: 25px;
         }
-        .main-text{
-            margin-top: 100px; 
+
+        .main-text {
+            margin-top: 100px;
             color: rgb(0, 0, 0);
         }
-        .heading-text{
+
+        .heading-text {
             font-family: Montserrat, sans-serif;
             color: #007bff;
             padding-top: 30px;
             font-size: 25px;
+
             
         }
+        .carousel-inner{
+            height: 700px;
+            padding: 10%;
+            display: flex;
+            margin-top: -70px;
+
+        }
         
+        /* Project Thumbnail */
+        .proj{ 
+            max-width: 600px;
+            border-radius: 30px;
+           
+        }
+        .img-container{
+            padding-top: 150px;
+            max-width: 600px;
+            overflow: hidden;
+            max-height: 500px;
+            border-radius: 30px;
+            margin: auto
+        }
+        .carousel-caption{
+            position: absolute;
+            top: -20px;
+            color: black;
+        }
+        a {
+            margin: auto;
+        }
+
         @media (max-width: 570px) {
-            .nav-link{
+            .nav-link {
                 margin-left: 45%;
             }
-            .main-text{
+            .main-text {
                 margin-top: 30px;
                 padding: 30px;
             }
-            
+            .proj{
+            max-width: 400px;
+            border-radius: 30px;
         }
+        .carousel-inner{
+            max-height: 600px;
+            margin-top: 0px;
+        }
+        
 
-
-
-
+        }
     </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-light shadow">
-        <a class="navbar-brand"> <img src = "Midterms 1 - UNIT 4 Video/logo.png" class = "techstack"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand"> <img src="Midterms 1 - UNIT 4 Video/logo.png" class="techstack"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link fs-5 my-20" href="#about">About Me</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link fs-5" href="#tech">Tech Stack</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link fs-5" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link fs-5" href="#contacts">Contacts</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link fs-5 my-20" href="#about">About Me</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link fs-5" href="#tech">Tech Stack</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link fs-5" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link fs-5" href="#contacts">Contacts</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <section id="about" >
+    <section id="about">
         <div class="container">
             <div class="row">
                 <!-- //Text Part // -->
                 <div class="col-lg-5 col-md-5 col-sm-12">
                     <h2 class="text-left mt-5 creation"><strong>CREATION.</strong></h2>
                     <div class="intro" style="color: black; font-weight: 400;">
-                      I'm <span style="color: rgb(25, 128, 244); font-weight: 400;">Mark Jayson Agao,</span> a scholar and a technology student
+                        I'm <span style="color: rgb(25, 128, 244); font-weight: 400;">Mark Jayson Agao,</span> a scholar
+                        and a technology student
                     </div>
-                    <p class="fs-6 mt-3">I am still not yet sure on what tech field I want to settle on, but base on my current endeavors, it seems that I am interested in:</p>
-                    <div class = "interests d-flex ">                    
+                    <p class="fs-6 mt-3">I am still not yet sure on what tech field I want to settle on, but base on my
+                        current endeavors, it seems that I am interested in:</p>
+                    <div class="interests d-flex ">
                         <span class="badge rounded-pill text-bg-primary m-1">Data</span>
                         <span class="badge rounded-pill text-bg-primary m-1">Algorithms</span>
                         <span class="badge rounded-pill text-bg-primary m-1">Design</span>
@@ -148,112 +199,65 @@
                     </p>
                 </div>
                 <!-- picture part -->
-                <div class="col-lg-7 col-md-7 col-sm-12" style = "overflow-y: hidden; max-height: 500px; ">
-                    <img src="Midterms 1 - UNIT 4 Video/jaysSidePic.png" alt="Swiss Landscape" class="img-fluid rounded">
+                <div class="col-lg-5 col-md-7 col-sm-10" style="overflow-y: hidden; max-height: 600px; ">
+                    <img src="Midterms 1 - UNIT 4 Video/jaysSidePic.png" alt="Swiss Landscape"
+                        class="img-fluid rounded">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id = "tech" class="bg-dark">
-    <div class="container">
-        <div class="d-flex justify-content-center heading-text"> Tech Stack</div>
-        <p class=" fs-6 mt-5 px-4 sub text-light">Switzerland, officially the Swiss Confederation, is a landlocked country located in west-central Europe. It is bordered by Italy to the south, France to the west, Germany to the north, and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the country's population of 9 million are concentrated on the plateau, which hosts its largest cities and economic centres, including Zurich, Geneva, and Base</div>
+    <section id="tech" class="bg-dark">
+        <div class="container">
+            <div class="d-flex justify-content-center heading-text"> Tech Stack</div>
+            <p class=" fs-6 mt-5 px-4 sub text-light">Switzerland, officially the Swiss Confederation, is a landlocked
+                country located in west-central Europe. It is bordered by Italy to the south, France to the west,
+                Germany to the north, and Austria and Liechtenstein to the east. Switzerland is geographically divided
+                among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory,
+                whereas most of the country's population of 9 million are concentrated on the plateau, which hosts its
+                largest cities and economic centres, including Zurich, Geneva, and Base
+        </div>
         </p>
         <div class="row p-5">
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/python-logo.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/python-logo.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/LlamaIndex.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/LlamaIndex.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/C++.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/C++.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/HTML.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/HTML.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/CSS.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/CSS.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/javascript-logo.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/javascript-logo.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/Git.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/Git.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/PowerBi.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/PowerBi.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/Figma.png" class = "techstack">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/Figma.png" class="techstack">
             </div>
-            <div class = "col-lg-2 col-md-3 col-4">
-                <img src = "Midterms 1 - UNIT 4 Video/Adobe Illustrator.png " class = "icon">
+            <div class="col-lg-2 col-md-3 col-4">
+                <img src="Midterms 1 - UNIT 4 Video/Adobe Illustrator.png " class="icon">
             </div>
-            
+
         </div>
-    </div>
-        
+        </div>
     </section>
-    <div class="container mt-5">
-        <h3 class="fs-2 title mb-4">System Administration and Maintenance Activities</h3>
-        <div class="row">
-            <div class="col-l col-md-4g-4 col-m col-md-4d-6 col-s col-md-4m-12 ">
-                <a href="https://simplebooklet.com/diwata">
-                    <div class="card card shadow">
-                        <img src="Activity 1 - Brochure/DiwataThumbnail.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Activity 1 - Diwatea 1 Brochure</h5>
-                            <p class="card-text"> This is an informative brochure about the detials, specification, and
-                                story of the Philippines first satellite, the Diwata 1. </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-l col-md-4g-4 col-m col-md-4d-6 col-s col-md-4m-12 ">
-                <a href="Activity 2 - Places/index.html">
-                    <div class="card card shadow">
-                        <img src="Activity 2 - Places/SS_SwitzerlandWeb.jpeg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Activity 2 - Switzerland Dynamic Webpage</h5>
-                            <p class="card-text">This is a website features the great country of Switzerland and the
-                                beautiful destinations there</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-l col-md-4g-4 col-m col-md-4d-6 col-s col-md-4m-12 ">
-                <a href="Activity 4 - API/index.html">
-                    <div class="card card shadow">
-                        <img src="Activity 4 - API/APIthumbnail.jpeg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Activity 4 - Knowledge Quest ft. Trivia API</h5>
-                            <p class="card-text"> Knowledge Quest is a thrilling trivia game that challenges your mind
-                                and tests your knowledge across
-                                a wide range of subjects. </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-l col-md-4g-4 col-m col-md-4d-6 col-s col-md-4m-12">
-                <div class="card card">
-                    <img src="Activity 2 - Places/plus.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Future activities will appear here</h5>
 
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-    </div>
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
