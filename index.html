@@ -35,11 +35,17 @@
         #about {
             background-color: #E9EDEE;
         }
-        #projects{
+
+        #projects {
             background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0), rgba(0, 0, 0, 0.901));
-            background-color:#f4f4f4;
+            background-color: #f4f4f4;
         }
-        
+
+        a {
+            text-decoration: none;
+        }
+
+
 
         .card img {
             width: 100%;
@@ -78,7 +84,7 @@
             font-weight: 900;
             color: darkgray;
         }
-        
+
 
         .intro {
             font-size: 25px;
@@ -95,23 +101,25 @@
             padding-top: 30px;
             font-size: 25px;
 
-            
+
         }
-        .carousel-inner{
+
+        .carousel-inner {
             height: 700px;
             padding: 10%;
             display: flex;
             margin-top: -70px;
 
         }
-        
+
         /* Project Thumbnail */
-        .proj{ 
+        .proj {
             max-width: 600px;
             border-radius: 30px;
-           
+
         }
-        .img-container{
+
+        .img-container {
             padding-top: 150px;
             max-width: 600px;
             overflow: hidden;
@@ -119,32 +127,38 @@
             border-radius: 30px;
             margin: auto
         }
-        .carousel-caption{
+
+        .carousel-caption {
             position: absolute;
             top: -20px;
             color: black;
         }
+
         a {
             margin: auto;
+            color: white;
         }
 
         @media (max-width: 570px) {
             .nav-link {
                 margin-left: 45%;
             }
+
             .main-text {
                 margin-top: 30px;
                 padding: 30px;
             }
-            .proj{
-            max-width: 400px;
-            border-radius: 30px;
-        }
-        .carousel-inner{
-            max-height: 600px;
-            margin-top: 0px;
-        }
-        
+
+            .proj {
+                max-width: 400px;
+                border-radius: 30px;
+            }
+
+            .carousel-inner {
+                max-height: 600px;
+                margin-top: 0px;
+            }
+
 
         }
     </style>
@@ -153,7 +167,7 @@
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-light shadow">
-        <a class="navbar-brand"> <img src="Midterms 1 - UNIT 4 Video/logo.png" class="techstack"> </a>
+        <a class="navbar-brand"> <img src="Activitiy 3-Portfolio/logo.png" class="techstack"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -200,8 +214,7 @@
                 </div>
                 <!-- picture part -->
                 <div class="col-lg-5 col-md-7 col-sm-10" style="overflow-y: hidden; max-height: 600px; ">
-                    <img src="Midterms 1 - UNIT 4 Video/jaysSidePic.png" alt="Swiss Landscape"
-                        class="img-fluid rounded">
+                    <img src="Activitiy 3-Portfolio/jaysSidePic.png" alt="Swiss Landscape" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -220,42 +233,140 @@
         </p>
         <div class="row p-5">
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/python-logo.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/python-logo.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/LlamaIndex.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/LlamaIndex.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/C++.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/C++.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/HTML.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/HTML.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/CSS.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/CSS.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/javascript-logo.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/javascript-logo.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/Git.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/Git.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/PowerBi.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/PowerBi.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/Figma.png" class="techstack">
+                <img src="Activitiy 3-Portfolio/Figma.png" class="techstack">
             </div>
             <div class="col-lg-2 col-md-3 col-4">
-                <img src="Midterms 1 - UNIT 4 Video/Adobe Illustrator.png " class="icon">
+                <img src="Activitiy 3-Portfolio/Adobe Illustrator.png " class="icon">
             </div>
 
         </div>
         </div>
     </section>
+    <section id="projects">
+        <div class="container-fluid px-6">
+            <!-- TEXT HERE -->
+            <div class="d-flex justify-content-center heading-text"> Projects</div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
 
-    
-    
+                    <div class="carousel-item active">
+                        <a href="https://simplebooklet.com/diwata">
+                            <div class="img-container">
+                                <img src="Activity 1 - Brochure/DiwataThumbnail.jpg" class="proj" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                                <h5>Diwatea 1 Brochure</h5>
+                                <p>This is an informative brochure about the detials, specification, and
+                                    story of the Philippines first satellite, the Diwata 1.</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <a href="Activity 2 - Places/index.html">
+                            <div class="img-container">
+                                <img src="Activity 2 - Places/SS_SwitzerlandWeb.jpeg" class="proj" alt="...">
+                            </div>
+                            <div class="carousel-caption ">
+                                <h5>Discover Switzerland</h5>
+                                <p>This is a website features the great country of Switzerland and the
+                                    beautiful destinations there</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <a href="Activity 4 - API/index.html">
+                            <div class="img-container">
+                                <img src="Activity 4 - API/APIthumbnail.jpeg" class="proj" alt="...">
+                            </div>
+                            <div class="carousel-caption ">
+                                <h5>fourth slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container-fluid bg-dark p-5">
+            <div class="row px-6">
+                <div class="col-lg-5 col-sm-12"> <div class = "heading-text" >Contact Me: </div> </div>
+                <div class="col-lg-7 col-sm-12">
+                    <a href="https://web.facebook.com/mjathegreatest/">
+                        <div class = "fs-4">
+                            <img src="Activitiy 3-Portfolio/Facebook-Logo.png" class="icon">
+                            Facebook
+                        </div>
+                        <a href="https://www.linkedin.com/in/mark-jayson-agao/">
+                            <div class = "fs-4">
+                                <img src="Activitiy 3-Portfolio/logo-linkedin.png" class="icon">
+                                LinkedIn
+                            </div>
+                        </a>
+                        
+                        <a href="markjaysonagao10@gmail.com">
+                            <div class = "fs-4 c-light">
+                                <img src="Activitiy 3-Portfolio/Gmail-Logo.png" class="icon">
+                                markjaysonagao10@gmail.com
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
