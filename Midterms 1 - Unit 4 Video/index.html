@@ -19,10 +19,10 @@
       background-color: rgb(255, 255, 255);
     }
 
-    #wellbeing {
-
-    }
-
+    #wellbeing {}
+a{
+  text-decoration: none;
+}
 
     .title {
       font-size: 70px;
@@ -84,44 +84,18 @@
       border-top: 3px solid black;
       margin-top: 2px;
     }
-    .btn-info{
+
+    .btn-info {
       width: 20vw;
     }
-    .player{
+
+    .player {
       padding: 30px;
     }
 
-    @media (max-width: 768px) {
-      .playerVid {
-        width: 100%;
-        height: 45vh;
-        padding-top: 10px;
-        margin: 8px;
-        background-color: azure;
-        box-shadow: 30;
-        border-radius: 40px;
-      }
-      .others{
-      width: 70%;
-      height: calc(55vw);
-      padding-top: 10px;
-      margin: auto;
-      background-color: azure;
-      }
-      .player{
-      padding: 20px;
-    }
-    }
-    @media (max-width: 992px ) and (min-width: 769px) {
-      .others{
-      width: 45%;
-      height: calc(25vw);
-      padding-top: 10px;
-      margin: auto;
-      background-color: azure;
-      }
-      
-    }
+    
+
+    
   </style>
 </head>
 
@@ -156,11 +130,11 @@
         </div>
         <div class="col-lg-8">
           <div class="col d-flex justify-content-center">
-            <button type="button" class="btn btn-primary m-1 px-5">All</button>
-            <button type="button" class="btn btn-info m-1 p-3">Web Development</button>
-            <button type="button" class="btn btn-info m-1 p-3">Data Science</button>
-            <button type="button" class="btn btn-info m-1 p-3">Mobile App Development</button>
-          
+            <button type="button" class="btn btn-primary m-1 px-5" id = "all">All</button>
+            <button type="button" class="btn btn-info m-1 p-3" id = "web">Web Development</button>
+            <button type="button" class="btn btn-info m-1 p-3" id = "dataS">Data Science</button>
+            <button type="button" class="btn btn-info m-1 p-3" id ="mobile">Mobile App Development</button>
+
           </div>
         </div>
       </div>
@@ -170,62 +144,7 @@
     <div class="fs-2 z-index-100 px-4"> Web Development</div>
     <hr>
     <section id="wellbeing" class="container-fluid">
-      <div class="row p-4 rounded">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button type="button" class="btn w-100 p-0 border-0" id="buttonD">
-            <div class="card video-container">
-              <iframe src="https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr
-                er</h2>
-              <p class="px-2 caption">
-                FireShip
-              </p>
-            </div>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card video-container ">
-            <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr er
-            </h2>
-            <p class="px-2 caption">
-              FireShip
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card video-container ">
-            <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr er
-            </h2>
-            <p class="px-2 caption">
-              FireShip
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card video-container">
-            <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr er
-            </h2>
-            <p class="px-2 caption">
-              FireShip
-            </p>
-          </div>
-        </div>
-      </div>
+
 
     </section>
 
@@ -235,52 +154,112 @@
   </div>
 
   <!-- VIDEO PLAYER -->
-  <div class="container-fluid" id="player">
-    <div class="row player">
-      <!-- MAIN PLAYER -->
-      <div class="col-lg-8 col-md-12 col-sm-12 ">
-        <div class="rounded m-auto playerVid">
-          <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script>
 
-      <!-- OTHER VIDEOS -->
-      <div class="col-lg-4 col-md-12 col-sm-12 p-2">
-        <div class="row">
-          <div class="card col-lg-12 col-md-6 col-sm-6 mt-3 others">
-            <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr er
-              </h2>
-              <p class="px-2 caption">
-                FireShip
-              </p>
-          </div>
-          <div class="card col-lg-12 col-md-6 col-sm-6 mt-3 others">
-            <iframe class="video" src="https://www.youtube.com/embed/b3rTMd7WUtc?si=WKKWx8cxCXpRKIgcrel=1&fs=1"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <h2 class="fs-6 p-2 pb-3 vid-title "> Title df ere re ererererre ere erwe re r erere r erererere e rererr er
-              </h2>
-              <p class="px-2 caption">
-                FireShip
-              </p>
-          </div>
+    function categ () {
+      
+
+          const handleClick = (category) => {
+          fetch('videos.json')
+        .then(response => response.json())
+        .then(data => {
+          let cont = document.getElementById("wellbeing");
+          cont.innerHTML = '';
+          let vid = `<div class="row p-4 rounded">`;
+
+            const  videoFilter = data.webdev.filter(v => v.category == category || category == "all");
+            const videosToShow = videoFilter.slice(0, 10);
+            videosToShow.forEach(video => {
+            vid += `
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="player.html?id=${video.id}">
+                <div class="card video-container">
+                  <iframe src="${video.videolink + "controls=0 "}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                  </iframe>
+                  <h2 class="fs-6 p-2 pb-3 vid-title">${video.title || 'Untitled Video'}</h2>
+                  <p class="px-2 caption">
+                    ${video.channel || 'Unknown Channel'}
+                  </p>
+                </div>
+              </a>
+            </div>`;
+          });
+          vid += `</div>`;
+          cont.innerHTML += vid;
 
 
-        </div>
-      </div>
+          });
+        }
+            const all = document.getElementById("all");
+            const web = document.getElementById("web");
+            const mobile = document.getElementById("mobile");
+            const data = document.getElementById("dataS");
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+            const filterAll = () => handleClick("all");
+            const filterweb = () => handleClick("webdev");
+            const filtermobile = () => handleClick("mobile");
+            const filterdataS = () => handleClick("data");
+            
+            all.addEventListener("click", filterAll);
+            web.addEventListener("click", filterweb);
+            mobile.addEventListener("click", filtermobile);
+            data.addEventListener("click", filterdataS);
+          
+            const  videoFilter = data.webdev.find(v => v.category == category);
+
+    }
+    function showHome() {
+      fetch('videos.json')
+        .then(response => response.json())
+        .then(data => {
+          let vids = document.getElementById("wellbeing");
+          vids.innerHTML = '';
+          let vid = `<div class="row p-4 rounded">`;
+    
+          // Use the first 5 web development videos or fewer if less are available
+          const webdevVideos = data.webdev.filter(item => item.category);
+          const videosToShow = webdevVideos.slice(0, 7);
+    
+          videosToShow.forEach(video => {
+            vid += `
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <a href="player.html?id=${video.id}">
+                <div class="card video-container">
+                  <iframe src="${video.videolink}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                  </iframe>
+                  <h2 class="fs-6 p-2 pb-3 vid-title">${video.title || 'Untitled Video'}</h2>
+                  <p class="px-2 caption">
+                    ${video.channel || 'Unknown Channel'}
+                  </p>
+                </div>
+              </a>
+            </div>`;
+          });
+    
+          vid += `</div>`;
+          vids.innerHTML += vid;
+
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+    }
+
+
+    
+    showHome();
+    categ();
+  </script>
 </body>
 
 </html>

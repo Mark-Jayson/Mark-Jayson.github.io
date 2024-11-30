@@ -1,0 +1,70 @@
+{
+    "response_code": 0,
+    "webdev": [
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
+            "title": "Front End Developer Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "1"
+            
+        },
+        {
+            
+            "category": "webdev",
+            "videolink": "https://www.youtube.com/embed/erEgovG9WBs?si=a3mDNiHMsgkhqZnF",
+            "title": "100 Web Development Things you should know",
+            "channel": "freeCodeCamp",
+            "id" : "2"
+            
+        },
+        {
+           
+            "category": "webdev",
+            "videolink": "https://www.youtube.com/embed/tN6oJu2DqCM?si=nayCMC8FpIK2xmqs",
+            "title": "Back-End Development Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "3"
+            
+        },
+        {
+           
+            "category": "data",
+            "videolink": "https://www.youtube.com/embed/PSNXoAs2FtQ?si=IFaN-JFqK1Tpy4r_",
+            "title": "Data Analyst Bootcamp",
+            "channel": "freeCodeCamp",
+            "id" : "4"
+            
+        },
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
+            "title": "Front End Developer Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "5"
+           
+        },
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
+            "title": "Front End Developer Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "6"
+        },
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
+            "title": "Front End Developer Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "5"
+        },
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
+            "title": "Front End Developer Roadmap 2024",
+            "channel": "freeCodeCamp",
+            "id" : "5"
+        }
+        
+    ]
+}
