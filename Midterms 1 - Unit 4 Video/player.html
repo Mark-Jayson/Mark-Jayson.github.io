@@ -27,10 +27,10 @@
             font-weight: 600;
             color: rgb(24, 33, 49);
             margin: auto;
-            
+
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
@@ -94,25 +94,28 @@
         .player {
             padding: 30px;
         }
-        .back{
+
+        .back {
             width: 60px;
         }
+
         .code {
             margin-top: 10px;
         }
 
         .others {
-                width: 100%;
-                height: calc(28vw);
-                margin-bottom: 10px;
-                margin: auto;
-                background-color: azure;
+            width: 100%;
+            height: calc(28vw);
+            margin-bottom: 10px;
+            margin: auto;
+            background-color: azure;
         }
-            .others p{
-                margin-top: -20px;
-                margin-bottom: -20px;
-            }
-            
+
+        .others p {
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+
 
         @media (max-width: 768px) {
             .playerVid {
@@ -132,7 +135,8 @@
                 margin: auto;
                 background-color: azure;
             }
-            .others p{
+
+            .others p {
                 margin-top: 0px;
                 margin-bottom: -20px;
             }
@@ -140,7 +144,8 @@
             .player {
                 padding: 20px;
             }
-            .title{
+
+            .title {
                 display: flex;
                 justify-content: center;
             }
@@ -156,6 +161,7 @@
                 box-shadow: 30;
                 border-radius: 40px;
             }
+
             .others {
                 width: 45%;
                 height: calc(30vw);
@@ -163,7 +169,7 @@
                 margin: auto;
                 background-color: azure;
             }
-            
+
 
         }
     </style>
@@ -176,13 +182,14 @@
 
             <div class=" p-4 title">
                 <a href="index.html" style="color: rgb(0, 0, 0);">
-              <img src="MJA logo@4x-8.png" class="title-logo" style="border-radius: 20px; width: 50px; height: 50px;">
-              TheCodeCamp
-            </a>
+                    <img src="MJA logo@4x-8.png" class="title-logo"
+                        style="border-radius: 20px; width: 50px; height: 50px;">
+                    TheCodeCamp
+                </a>
             </div>
-      
-      
-          </div>
+
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -200,14 +207,14 @@
         }
 
         const playVid = (id) => {
-    fetch('videos.json')
-        .then(response => response.json())
-        .then(data => {
-            const main = document.getElementById("player");
-            const mainVideo = data.webdev.find(v => v.id === id);
-            
-            // Main video section
-            main.innerHTML += `
+            fetch('videos.json')
+                .then(response => response.json())
+                .then(data => {
+                    const main = document.getElementById("player");
+                    const mainVideo = data.webdev.find(v => v.id === id);
+
+                    // Main video section
+                    main.innerHTML += `
                 <div class="row player">
                     
                     <a href="index.html" style="color: white;">
@@ -253,16 +260,16 @@
                 </div>
             `;
 
-            // Fetch related videos
-            const relatedVideosContainer = document.getElementById("related-videos");
-            
-            // Limit to first 3 related videos, excluding the main video
-            const relatedVideos = data.webdev
-                .filter(video => video.id !== id && video.category === mainVideo.category)
-                .slice(0, 10);
 
-            relatedVideos.forEach(video => {
-                relatedVideosContainer.innerHTML += `
+                    const relatedVideosContainer = document.getElementById("related-videos");
+
+
+                    const relatedVideos = data.webdev
+                        .filter(video => video.id !== id && video.category === mainVideo.category)
+                        .slice(0, 10);
+
+                    relatedVideos.forEach(video => {
+                        relatedVideosContainer.innerHTML += `
                 <a href="player.html?id=${video.id}" class = "card col-lg-12 col-md-6 col-sm-6 mb-3 pb-5 others">
                     
                         <iframe 
@@ -277,18 +284,18 @@
                     
                     </a>
                 `;
-            });
+                    });
 
-            main.style.display = 'block';
+                    main.style.display = 'block';
 
-            
-        })
-        .catch(error => {
-            console.error('Error fetching videos:', error);
-        });
-}
 
-        // Ensure the script runs after DOM is loaded
+                })
+                .catch(error => {
+                    console.error('Error fetching videos:', error);
+                });
+        }
+
+
         document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>

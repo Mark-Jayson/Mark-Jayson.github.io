@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Switzerland</title>
-    <link rel="icon" type="image/x-icon" href="https://styles.redditmedia.com/t5_8o77zh/styles/communityIcon_inugs981el7b1.png">
+    <link rel="icon" type="image/x-icon"
+        href="https://styles.redditmedia.com/t5_8o77zh/styles/communityIcon_inugs981el7b1.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .hero {
@@ -17,34 +19,41 @@
             justify-content: center;
             text-align: center;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         body {
             background-color: rgb(0, 0, 0);
-            
+
         }
-        .head{
+
+        .head {
             color: rgb(255, 63, 63);
             padding: 20px;
             margin-bottom: -5px;
 
         }
+
         .sub {
             font-family: Poppins;
             font-weight: 300;
             font-size: 13px;
             text-align: center;
         }
-        #icon{
+
+        #icon {
             max-width: 25px;
             height: auto;
             margin: 0 0 2% 3%;
-  
+
         }
 
-        .col-lg-3, .col-md-12, .col-sm-12{
+        .col-lg-3,
+        .col-md-12,
+        .col-sm-12 {
             margin: 40px;
         }
+
         .flip-card {
             background-color: white;
             width: 400px;
@@ -53,6 +62,7 @@
             margin-bottom: 0px;
             border-radius: 25px;
         }
+
         .flip-card-inner {
             position: relative;
             width: 100%;
@@ -61,20 +71,25 @@
             transition: transform 0.6s;
             transform-style: preserve-3d;
         }
+
         .flip-card:hover .flip-card-inner {
             transform: scale(1.05);
         }
+
         .flip-card.flipped .flip-card-inner {
             transform: rotateY(180deg);
         }
-        .flip-card-front, .flip-card-back {
+
+        .flip-card-front,
+        .flip-card-back {
             position: absolute;
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .flip-card-front {
             background-color: #bbb;
             color: black;
@@ -85,6 +100,7 @@
             background-size: cover;
             background-position: center;
         }
+
         .flip-card-front h3 {
             background-color: rgba(255, 255, 255, 0.8);
             width: 100%;
@@ -92,6 +108,7 @@
             padding: 10px;
             border-radius: 0 18px;
         }
+
         .flip-card-back {
             background-color: white;
             color: black;
@@ -102,6 +119,7 @@
             align-items: center;
             padding: 20px;
         }
+
         @media (min-width: 800px) and (max-width: 1200px) {
             .lum {
                 width: 700px;
@@ -110,34 +128,39 @@
                 justify-content: center;
                 margin: auto;
             }
-        
-        .flip-card {
-            background-color: white;
-            width: 600px;
-            height: 300px;
-            perspective: 1000px;
-            margin-bottom: 30px;
-            border-radius: 25px;
+
+            .flip-card {
+                background-color: white;
+                width: 600px;
+                height: 300px;
+                perspective: 1000px;
+                margin-bottom: 30px;
+                border-radius: 25px;
+            }
         }
-        }
-        @media (max-width: 800px){
-            .flip-card{
+
+        @media (max-width: 800px) {
+            .flip-card {
                 margin-left: -60px
             }
-            .about{
+
+            .about {
                 display: flex;
                 justify-content: center;
             }
         }
-        
     </style>
 </head>
+
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid ">
-            <a class="navbar-brand fs-3" > <img src = "https://styles.redditmedia.com/t5_8o77zh/styles/communityIcon_inugs981el7b1.png" id = "icon"> Discover <strong>Switzerland</strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fs-3"> <img
+                    src="https://styles.redditmedia.com/t5_8o77zh/styles/communityIcon_inugs981el7b1.png" id="icon">
+                Discover <strong>Switzerland</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -152,19 +175,28 @@
     <header id="home" class="hero">
         <div class="container">
             <h1 class="display-1">Welcome to Switzerland</h1>
-            <p class=" fs-6 mt-5 p-4 sub">Switzerland, officially the Swiss Confederation, is a landlocked country located in west-central Europe. It is bordered by Italy to the south, France to the west, Germany to the north, and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the country's population of 9 million are concentrated on the plateau, which hosts its largest cities and economic centres, including Zurich, Geneva, and Base</div>
-            </p>
+            <p class=" fs-6 mt-5 p-4 sub">Switzerland, officially the Swiss Confederation, is a landlocked country
+                located in west-central Europe. It is bordered by Italy to the south, France to the west, Germany to the
+                north, and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss
+                Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the
+                country's population of 9 million are concentrated on the plateau, which hosts its largest cities and
+                economic centres, including Zurich, Geneva, and Base
+        </div>
+        </p>
         </div>
     </header>
     <section id="about" class="my-0">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 my-20" style="margin-top: 30px; color: white;">
-                    <h2 class="text-left mb-9 about" >About Switzerland</h2>
-                    <p class = "fs-6 mt-3 p-4">Switzerland, a land of breathtaking landscapes and rich cultural heritage, offers an unforgettable experience for every traveler. From the majestic Alps to pristine lakes, charming villages to cosmopolitan cities, Switzerland is a paradise waiting to be explored.</p>
+                    <h2 class="text-left mb-9 about">About Switzerland</h2>
+                    <p class="fs-6 mt-3 p-4">Switzerland, a land of breathtaking landscapes and rich cultural heritage,
+                        offers an unforgettable experience for every traveler. From the majestic Alps to pristine lakes,
+                        charming villages to cosmopolitan cities, Switzerland is a paradise waiting to be explored.</p>
                 </div>
-                <div class="col-md-5 my-0 " style = "overflow-y: hidden; max-height: 400px; ">
-                    <img src="https://as1.ftcdn.net/v2/jpg/02/59/60/48/1000_F_259604837_CcQal6FTkNyG4oIiWFUN8h9Akil2O2MR.jpg" alt="Swiss Landscape" class="img-fluid rounded">
+                <div class="col-md-5 my-0 " style="overflow-y: hidden; max-height: 400px; ">
+                    <img src="https://as1.ftcdn.net/v2/jpg/02/59/60/48/1000_F_259604837_CcQal6FTkNyG4oIiWFUN8h9Akil2O2MR.jpg"
+                        alt="Swiss Landscape" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -182,25 +214,29 @@
                 <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('https://www.thoughtco.com/thmb/EKnmgoAr_X4TrIpxBiPYu9lao9U=/2000x1333/filters:fill(auto,1)/GettyImages-468963673-5ad40ad2fa6bcc0036add08a.jpg');">
+                            <div class="flip-card-front"
+                                style="background-image: url('https://www.thoughtco.com/thmb/EKnmgoAr_X4TrIpxBiPYu9lao9U=/2000x1333/filters:fill(auto,1)/GettyImages-468963673-5ad40ad2fa6bcc0036add08a.jpg');">
                                 <h3>Matterhorn</h3>
                             </div>
                             <div class="flip-card-back">
                                 <h5>Matterhorn</h5>
-                                <p>The iconic pyramid-shaped peak in the Swiss Alps, standing at 4,478 meters (14,692 ft). It's one of the highest summits in the Alps and Europe.</p>
+                                <p>The iconic pyramid-shaped peak in the Swiss Alps, standing at 4,478 meters (14,692
+                                    ft). It's one of the highest summits in the Alps and Europe.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum" >
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('https://cdn.audleytravel.com/4990/3566/79/15985940-lake-geneva-region.jpg');">
+                            <div class="flip-card-front"
+                                style="background-image: url('https://cdn.audleytravel.com/4990/3566/79/15985940-lake-geneva-region.jpg');">
                                 <h3>Lake Geneva</h3>
                             </div>
                             <div class="flip-card-back">
                                 <h5>Lake Geneva</h5>
-                                <p>A crescent-shaped lake shared between Switzerland and France. It's surrounded by the Alps and is known for its luxurious resorts and picturesque towns.</p>
+                                <p>A crescent-shaped lake shared between Switzerland and France. It's surrounded by the
+                                    Alps and is known for its luxurious resorts and picturesque towns.</p>
                             </div>
                         </div>
                     </div>
@@ -208,12 +244,14 @@
                 <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center lum">
                     <div class="flip-card ">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/originals/64/c5/54/64c5549b584b16f98cea8b76a5538c19.jpg');">
+                            <div class="flip-card-front"
+                                style="background-image: url('https://i.pinimg.com/originals/64/c5/54/64c5549b584b16f98cea8b76a5538c19.jpg');">
                                 <h3>Chillon Castle</h3>
                             </div>
                             <div class="flip-card-back">
                                 <h5>Chillon Castle</h5>
-                                <p>A medieval fortress on the shores of Lake Geneva. It's one of Switzerland's most visited historic monuments, with a history spanning over 1000 years.</p>
+                                <p>A medieval fortress on the shores of Lake Geneva. It's one of Switzerland's most
+                                    visited historic monuments, with a history spanning over 1000 years.</p>
                             </div>
                         </div>
                     </div>
@@ -222,23 +260,26 @@
         </div>
     </section>
     <div class="display-6 d-flex justify-content-center bg-light rounded head">Current Weather</div>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/46d828d23/switzerland/" data-label_1="SWITZERLAND" data-theme="salmon" data-basecolor="#ffffff" data-shadow="rgba(255, 242, 242, 0.39)" data-textcolor="#f84a4a" data-highcolor="#f84a4a" data-lowcolor="#30a2ff" data-mooncolor="#f84a4a" data-cloudcolor="#f84a4a" data-cloudfill="#f84a4a" >SWITZERLAND</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/46d828d23/switzerland/" data-label_1="SWITZERLAND"
+        data-theme="salmon" data-basecolor="#ffffff" data-shadow="rgba(255, 242, 242, 0.39)" data-textcolor="#f84a4a"
+        data-highcolor="#f84a4a" data-lowcolor="#30a2ff" data-mooncolor="#f84a4a" data-cloudcolor="#f84a4a"
+        data-cloudfill="#f84a4a">SWITZERLAND</a>
     <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
     </script>
     <div class="display-6 mt-5 d-flex justify-content-center head">Instagram Post on Switzerland</div>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-d9c7dc6d-452b-4600-9083-a912eccfccff" data-elfsight-app-lazy></div>
-    
+    <div class="elfsight-app-d9c7dc6d-452b-4600-9083-a912eccfccff" data-elfsight-app-lazy></div>
 
 
 
-    
+
+
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Discover Switzerland. All rights reserved.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelectorAll('.flip-card').forEach(card => {
@@ -248,4 +289,5 @@
         });
     </script>
 </body>
+
 </html>
