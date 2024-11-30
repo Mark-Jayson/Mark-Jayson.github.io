@@ -45,26 +45,85 @@
            
         },
         {
-            "category": "webdev",
-            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
-            "title": "Front End Developer Roadmap 2024",
-            "channel": "freeCodeCamp",
+            "category": "data",
+            "videolink": "https://www.youtube.com/embed/XW0YptcgZSk?si=SwvUdxE-5zq5zHOJ",
+            "title": "Data Scientist vs Data Analyst vs Data Engineer: What's the difference",
+            "channel": "Recall",
             "id" : "6"
         },
         {
-            "category": "webdev",
-            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
-            "title": "Front End Developer Roadmap 2024",
+            "category": "data",
+            "videolink": "https://www.youtube.com/embed/PHsC_t0j1dU?si=7uRp6kx7iTGq1TpW",
+            "title": "Data Engineering for Beginners",
             "channel": "freeCodeCamp",
-            "id" : "5"
+            "id" : "7"
+        },
+        {
+            "category": "data",
+            "videolink": "https://www.youtube.com/embed/i_LwzRVP7bg?si=jsh9VsG9YLyuXjWF",
+            "title": "Machine Learning for Everybody",
+            "channel": "freeCodeCamp",
+            "id" : "8"
         },
         {
             "category": "webdev",
-            "videolink": "https://www.youtube-nocookie.com/embed/9He4UBLyk8Y?si=autk5OoiXEk4RK1V",
-            "title": "Front End Developer Roadmap 2024",
-            "channel": "freeCodeCamp",
-            "id" : "5"
+            "videolink": "https://www.youtube.com/embed/SqcY0GlETPk?si=dhRVq0uJx1UWP0Gg",
+            "title": "React Tutorials for Beginners",
+            "channel": "Programming with Mosh",
+            "id" : "9"
+        },
+        { 
+            "category": "mobile",
+            "videolink": "https://www.youtube.com/embed/yye7rSsiV6k?si=L7m6nobb_tV4C-Cd",
+            "title": "Mobile App Developer Complete Roadmap",
+            "channel": "Programming with Mosh",
+            "id" : "10"
+        },
+        {
+            "category": "mobile",
+            "videolink": "https://www.youtube.com/embed/xWV71C2kp38?si=smKgFwRGMuDs41eq",
+            "title": "How do I make my first Flutter App",
+            "channel": "Flutter",
+            "id" : "11"
+        },
+        {
+            "category": "mobile",
+            "videolink": "https://www.youtube.com/embed/8sAyPDLorek?si=zlmtFyNzIUpD9UoZ",
+            "title": "Building your first Flutter App - with a Codelab!",
+            "channel": "Flutter",
+            "id" : "12"
+        },
+        {
+            "category": "mobile",
+            "videolink": "https://www.youtube.com/embed/0-S5a0eXPoc?si=I_i_XNhVpXyJj6cJ",
+            "title": "React Native Tutorials for Beginners",
+            "channel": "Programming with Mosh",
+            "id" : "13"
+        },
+        {
+            "category": "data",
+            "videolink": "https://www.youtube.com/embed/mJ3bGvy0WAY?si=AnC9h732FeajkeZt",
+            "title": "Build and Deploy React Native App",
+            "channel": "Javascript Mastery",
+            "id" : "14"
+        },
+        {
+            "category": "mobile",
+            "videolink": "https://www.youtube.com/embed/FjrKMcnKahY?si=NArXnrPqkcHv7x1M",
+            "title": "Build and Deplor React Native App",
+            "channel": "Javascript Mastery",
+            "id" : "15"
+        },
+        {
+            "category": "webdev",
+            "videolink": "https://www.youtube.com/embed/7S_tz1z_5bA?si=2SNbPNt3X2j61hbm",
+            "title": "SQL Course for Beginners",
+            "channel": "Javascript Mastery",
+            "id" : "16"
         }
+
+        
+        
         
     ]
 }

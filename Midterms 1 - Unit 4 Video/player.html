@@ -261,8 +261,8 @@
             
             // Limit to first 3 related videos, excluding the main video
             const relatedVideos = data.webdev
-                .filter(video => video.id !== id)
-                .slice(0, 3);
+                .filter(video => video.id !== id && video.category === mainVideo.category)
+                .slice(0, 10);
 
             relatedVideos.forEach(video => {
                 relatedVideosContainer.innerHTML += `

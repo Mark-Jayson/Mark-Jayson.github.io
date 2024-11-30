@@ -141,7 +141,7 @@ a{
     </section>
 
 
-    <div class="fs-2 z-index-100 px-4"> Web Development</div>
+    <div class="fs-2 z-index-100 px-4" id="mark">All Videos </div>
     <hr>
     <section id="wellbeing" class="container-fluid">
 
@@ -170,9 +170,14 @@ a{
           let cont = document.getElementById("wellbeing");
           cont.innerHTML = '';
           let vid = `<div class="row p-4 rounded">`;
-
+            const mark = document.getElementById("mark"); 
+            mark.innerHTML = `${category === "webdev" ? "Web Development" : 
+                  (category === "data" ? "Data Analytics" : 
+                   (category === "mobile" ? "Mobile Development" : 
+                    (category === "all" ? "All videos" : "")))
+                  }`;
             const  videoFilter = data.webdev.filter(v => v.category == category || category == "all");
-            const videosToShow = videoFilter.slice(0, 10);
+            const videosToShow = videoFilter.slice(0, 14);
             videosToShow.forEach(video => {
             vid += `
             <div class="col-lg-3 col-md-6 col-sm-12">
